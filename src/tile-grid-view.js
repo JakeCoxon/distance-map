@@ -15,7 +15,8 @@ const cellStyle = {
     position: 'relative'
 }
 const rowStyle = {
-    fontSize: 0
+    fontSize: 0,
+    whiteSpace: 'pre'
 }
 const iconStyle = {
     width: 20, height: 20,
@@ -40,7 +41,7 @@ class TileGridView extends React.Component {
     }
     render() {
 
-        const { width, height, tileSelect, tileApply, tileProps } = this.props;
+        const { width, height, tileSelect, tileApply, tileProps, cellSize } = this.props;
 
         return (<div>{_.range(height).map(y => {
 
@@ -49,7 +50,9 @@ class TileGridView extends React.Component {
 
                     const { value, iconColor, ...style } = tileProps(x, y);
                     const style = {
-                        ...cellStyle, ...style
+                        ...cellStyle, ...style,
+                        width: cellSize - 2, height: cellSize - 2,
+                        lineHeight: `${cellSize - 2}px`,
                     }
 
                     const mouseMove = () => {
