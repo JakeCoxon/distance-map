@@ -486,6 +486,11 @@ const update = () => {
                     <ul><li><a href="http://www.roguebasin.com/index.php?title=The_Incredible_Power_of_Dijkstra_Maps">The Incredible Power of Dijkstra Maps - RogueBasin</a></li>
                     <li><a href="http://www.roguebasin.com/index.php?title=Dijkstra_Maps_Visualized">Dijkstra Maps Visualized</a></li></ul>
 
+                    <h1>Install</h1>
+
+                    <pre><code>npm install distance-map</code></pre>
+
+                    <p><a href="https://github.com/jakecoxon/distance-map">View source on Github</a></p>
 
                     <h1>API Documentation</h1>
 
