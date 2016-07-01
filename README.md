@@ -1,3 +1,5 @@
+For more information: https://jakecoxon.github.io/distance-map/
+
 Development
 ===========
 
