@@ -112,7 +112,7 @@ class Model {
     }
 
 
-    @observable fleeTiles = "3";
+    @observable fleeTiles = "2";
     @computed get validatedFleeCoefficient() {
         const c = Number(this.fleeTiles);
         return c ? 1 / c + 1 : 1.8
