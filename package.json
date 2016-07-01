@@ -1,12 +1,16 @@
 {
   "name": "distance-map",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
   "dependencies": {
     "js-priority-queue": "^0.1.5"
   },
   "peerDependencie": {
     "babel-polyfill": "^6.9.1"
-  }
+  },
   "devDependencies": {
     "babel-core": "^6.3.26",
     "babel-loader": "^6.2.0",
