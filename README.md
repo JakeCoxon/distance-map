@@ -1,4 +1,4 @@
-For more information: https://jakecoxon.github.io/distance-map/
+For more information: http://projects.jake.cx/distance-map/
 
 Development
 ===========
