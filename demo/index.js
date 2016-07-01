@@ -242,7 +242,7 @@ const fleeState = new Model();
 fleeState.name = "fleeState"
 fleeState.reset = function() {
     this.targetsType = 1;
-    this.fleeTiles = "3";
+    this.fleeTiles = "2";
     this.availableTargets = [
         { node: this.levelGraph.tiles[1][1], cost: 0 },
         { node: this.levelGraph.getTile(7, 5), cost: 0 },
