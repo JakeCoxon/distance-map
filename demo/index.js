@@ -828,9 +828,10 @@ const finalDistanceMap =
                         </label>
                     </div>
                 </div>
-
-                
             </div>
+
+            <p>Built by Jake Coxon - <a href="http://jake.cx">What else am I up to?</a></p>
+
         </div>
     );
 
