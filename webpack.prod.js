@@ -3,7 +3,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: [
-        './src/js/index.js'
+        './demo/index.js'
     ],
     output: {
         path: require("path").resolve("./dist"),
@@ -18,7 +18,7 @@ module.exports = {
                 loader: "babel-loader",
                 query: {
                    presets: ['es2015', 'stage-1', 'react'],
-                   plugins: []
+                   plugins: ['transform-decorators-legacy']
                 }
             },
             { test: /\.css$/, loader: "style-loader!css-loader" },

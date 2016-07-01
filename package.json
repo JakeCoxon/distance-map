@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "distance-map",
   "version": "0.0.1",
   "dependencies": {
     "js-priority-queue": "^0.1.5"
@@ -13,6 +13,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-1": "^6.3.13",
     "base-64": "^0.1.0",
+    "chai": "^3.5.0",
     "chroma-js": "^1.1.1",
     "codemirror": "^5.10.0",
     "css-loader": "^0.23.1",
@@ -21,6 +22,7 @@
     "file-loader": "^0.8.5",
     "gray-matter": "^2.0.2",
     "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
     "gulp-gh-pages": "^0.5.4",
     "gulp-webpack": "^1.5.0",
     "js-yaml": "^3.6.1",
@@ -30,6 +32,7 @@
     "marked": "^0.3.5",
     "mobx": "^2.3.0",
     "mobx-react": "^3.3.1",
+    "mocha": "^2.5.3",
     "object.assign": "^1.0.3",
     "ramda": "^0.19.1",
     "raw-loader": "^0.5.1",
@@ -52,7 +55,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host 0.0.0.0 --config webpack.dev.js --content-base ./src/",
-    "dist": "./node_modules/webpack/bin/webpack.js --config webpack.prod.js --content-base ./src/"
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host 0.0.0.0 --config webpack.dev.js --content-base ./demo/",
+    "dist": "./node_modules/webpack/bin/webpack.js --config webpack.prod.js --content-base ./demo/",
+    "test": "mocha --compilers js:babel-core/register --reporter spec"
   }
 }

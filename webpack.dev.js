@@ -3,10 +3,10 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: [
-    'babel-polyfill',
+        'babel-polyfill',
         'webpack-dev-server/client?http://0.0.0.0:8080' , // WebpackDevServer host and port
         'webpack/hot/only-dev-server',
-        './src/index.js'
+        './demo/index.js'
     ],
     output: {
         path: "./dist",
